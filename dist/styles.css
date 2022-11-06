@@ -29,3 +29,53 @@
 h1 {
     font-size: 2.5em !important;
 }
+
+.scroller {
+    display: flex;
+    flex-direction: row;
+
+    /* position: relative; */
+    /* transform: translateY(0px); */
+    /* opacity: 0; */
+    /* transition: all 15s ease; */
+    /* animation: myscroll 5s 1; */
+}
+
+@keyframes myscroll {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-500px);
+    }
+}
+
+.scroller:active {
+    /* transform: translateY(-500px); */
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin: 30px;
+}
+
+.text-column p {
+    font-size: 0.7em;
+    margin: 30px 0px;
+}
+
+.bs-container {
+    display: absolute;
+    font-size: 0.8em;
+    /* width: 100%; */
+}
